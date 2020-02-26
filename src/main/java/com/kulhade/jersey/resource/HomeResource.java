@@ -1,6 +1,7 @@
-package com.kulhade.jersey;
+package com.kulhade.jersey.resource;
 
 import com.kulhade.jersey.response.User;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import javax.ws.rs.GET;
@@ -11,7 +12,9 @@ import javax.ws.rs.core.MediaType;
 /**
  * Created by vkulhade on 5/20/2016.
  */
-@Path("home")
+
+@Component
+@Path("/home")
 public class HomeResource {
 
     @GET
